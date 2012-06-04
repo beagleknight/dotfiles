@@ -1,3 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
-let g:netrw_dirhist_1='/home/david/.config'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/david/code/brandchats/app/controllers/agencies'
+let g:netrw_dirhist_2='/home/david/code/brandchats/app/concerns'
+let g:netrw_dirhist_3='/home/david/code/x/app/models'
+let g:netrw_dirhist_4='/home/david/code/ethon/examples/asteroids/images'
+let g:netrw_dirhist_5='/home/david/code/ethon/examples/asteroids'

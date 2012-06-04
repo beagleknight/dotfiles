@@ -1,3 +1,9 @@
 [user]
-	name = David
+	name = ultrayoshi
 	email = david@imesmes.com
+[color]
+	status = auto
+	branch = auto
+	diff = auto
+[core]
+	editor = vim
