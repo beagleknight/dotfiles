@@ -1,6 +1,6 @@
-= ultrayoshi's dotfiles
+# ultrayoshi's dotfiles
 
-== Installation
+## Installation
 
-chmod +x install.sh
-./install.sh # Warning: this command removes old symlinks
+    chmod +x install.sh
+    ./install.sh # Warning: this command removes old symlinks
