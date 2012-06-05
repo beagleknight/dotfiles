@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/david/code/imesmes/app/views/admin'
-let g:netrw_dirhist_2='/home/david/code/imesmes/app/views/devise/sessions'
-let g:netrw_dirhist_3='/home/david/code/imesmes/app/views/admin/categories'
-let g:netrw_dirhist_4='/home/david/code/x/app/controllers/users'
-let g:netrw_dirhist_5='/home/david/code/imesmes/app/assets/stylesheets'
-let g:netrw_dirhist_6='/home/david/code/brandchats/features/agency'
-let g:netrw_dirhist_7='/home/david/code/brandchats/features'
