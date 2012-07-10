@@ -8,6 +8,7 @@ set encoding=utf-8
 colorscheme torte
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
+set number                      " diplay line numbers
 
 "" Whitespace
 set nowrap                      " don't wrap lines
