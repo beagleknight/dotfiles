@@ -37,6 +37,7 @@ unsetopt correct_all
 # Customize to your needs...
 export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/vagrant/bin
 export JSTESTDRIVER_HOME=/home/david/bin
+export EDITOR=vim
 
 [[ -s "/home/david/.rvm/scripts/rvm" ]] && source "/home/david/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
