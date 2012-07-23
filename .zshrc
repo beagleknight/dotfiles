@@ -39,3 +39,13 @@ export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/u
 export JSTESTDRIVER_HOME=/home/david/bin
 
 [[ -s "/home/david/.rvm/scripts/rvm" ]] && source "/home/david/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# Launch tmux by default
+if [[ "$TERM" != "screen-256color" ]]
+then
+  tmux attach-session -t default || tmux new-session -s default
+  exit
+fi
+
+# Fix autorenaming windows for tmux
+export DISABLE_AUTO_TITLE="true"
