@@ -9,4 +9,4 @@
 	editor = vim
 [alias]
 	gl = log --graph --decorate --oneline --graph --all
-	sb = status -sb
+	sb = status -sb --ignore-submodules
