@@ -50,3 +50,6 @@ fi
 
 # Fix autorenaming windows for tmux
 export DISABLE_AUTO_TITLE="true"
+
+# Disable stopping flow with <C-s>
+stty -ixon
