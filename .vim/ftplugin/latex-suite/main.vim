@@ -1039,3 +1039,4 @@ endif
 exec 'pyfile '.fnameescape(expand('<sfile>:p:h')).'/pytools.py'
 
 " vim:fdm=marker:ff=unix:noet:ts=4:sw=4:nowrap
+imap <buffer> <leader>it <Plug>Tex_InsertItemOnThisLine

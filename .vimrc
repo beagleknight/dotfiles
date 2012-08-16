@@ -28,6 +28,9 @@ let mapleader=","
 " don't use swap
 set noswapfile
 
+" wrap text
+set wrap
+
 " double percentage sign in command mode is expanded
 " to directory of current file - http://vimcasts.org/e/14
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
@@ -36,9 +39,6 @@ map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
 map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
 
 "" --------------------- LaTeX configuration
-" problems with e-acute character
-imap <buffer> <leader>it <Plug>Tex_InsertItemOnThisLine
-
 " IMPORTANT: grep will sometimes skip displaying the file name if you
 " search in a singe file. This will confuse Latex-Suite. Set your grep
 " program to always generate a file-name.
