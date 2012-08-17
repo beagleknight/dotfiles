@@ -5,7 +5,7 @@ call pathogen#infect()
 set nocompatible                " choose no compatibility with legacy vi
 syntax enable
 set encoding=utf-8
-colorscheme desert
+colorscheme railscasts
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 
