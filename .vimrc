@@ -5,7 +5,7 @@ call pathogen#infect()
 set nocompatible                " choose no compatibility with legacy vi
 syntax enable
 set encoding=utf-8
-colorscheme desert
+colorscheme railscasts
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
 
@@ -36,8 +36,9 @@ set noswapfile
 " to directory of current file - http://vimcasts.org/e/14
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
-map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
-map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
+" map <leader>f :CommandTFlush<cr>\|:CommandT<cr>
+" map <leader>F :CommandTFlush<cr>\|:CommandT %%<cr>
+map <leader>t :CtrlP<cr>
 
 "" --------------------- LaTeX configuration
 " IMPORTANT: grep will sometimes skip displaying the file name if you
@@ -56,7 +57,7 @@ let g:Tex_DefaultTargetFormat='pdf'
 " 73  The number
 " v   On virtual columns only
 " .\+ Match one or more of any character
-match ErrorMsg /\%>79v.\+/
+" match ErrorMsg /\%>79v.\+/
 
 " Match as ErrorMsg any tabs that are not at the beginning of the line
 " [^   Begin of non-capture group
