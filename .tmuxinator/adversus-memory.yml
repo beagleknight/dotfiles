@@ -1,0 +1,8 @@
+# ~/.tmuxinator/adversus-memory.yml
+# you can make as many tabs as you wish...
+
+project_name: adversus-memory
+project_root: ~/code/adversus-memory
+tabs:
+  - editor: vim
+  - git: git gl

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-files=".vim .vimrc .zshrc .gitconfig .tmux.conf .lynxrc"
+files=".vim .vimrc .zshrc .gitconfig .tmux.conf .lynxrc .tmuxinator"
 
 for file in $files
 do

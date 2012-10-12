@@ -1,0 +1,8 @@
+# ~/.tmuxinator/ethon.yml
+# you can make as many tabs as you wish...
+
+project_name: ethon
+project_root: ~/code/ethon
+tabs:
+  - editor: vim
+  - git: git gl
