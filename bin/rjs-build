@@ -1,20 +1,19 @@
 #!/bin/bash
 
 VERSION=$1
+SRC_DIRECTORY=$HOME/code/ethon
+SRC_FILE="ethon"
 
 if [ -z $VERSION ]; then
-  printf "Usage: ethon-build VERSION\n\nExample:\n ethon-build <branch_or_tag>\n"
+  printf "Usage: rjs-build VERSION\n\nExample:\n rjs-build <branch_or_tag>\n"
   exit 1
 fi
 
 # Save working directory
 WD=`pwd`
 
-# Move to ethon directory
-cd $HOME/code/ethon
-
-# Disable terminal output
-1>/dev/null
+# Move to src directory
+cd $SRC_DIRECTORY
 
 # Checkout to the version
 git checkout $VERSION
@@ -23,7 +22,7 @@ git checkout $VERSION
 r.js -o app.build.js
 
 # Rename the output file for including version
-mv release/ethon.js $WD/ethon.$VERSION.js
+mv release/$SRC_FILE.js $WD/$SRC_FILE.$VERSION.js
 
 # Restore git state
 git checkout master 
@@ -31,4 +30,4 @@ git checkout master
 # Restore working directory
 cd $WD
 
-printf "Ethon $VERSION compiled successfully on release folder\n"
+printf "$SRC_FILE.$VERSION compiled successfully\n"
