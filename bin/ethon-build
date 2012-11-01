@@ -1,0 +1,34 @@
+#!/bin/bash
+
+VERSION=$1
+
+if [ -z $VERSION ]; then
+  printf "Usage: ethon-build VERSION\n\nExample:\n ethon-build <branch_or_tag>\n"
+  exit 1
+fi
+
+# Save working directory
+WD=`pwd`
+
+# Move to ethon directory
+cd $HOME/code/ethon
+
+# Disable terminal output
+1>/dev/null
+
+# Checkout to the version
+git checkout $VERSION
+
+# Build the version
+r.js -o app.build.js
+
+# Rename the output file for including version
+mv release/ethon.js $WD/ethon.$VERSION.js
+
+# Restore git state
+git checkout master 
+
+# Restore working directory
+cd $WD
+
+printf "Ethon $VERSION compiled successfully on release folder\n"
