@@ -1,11 +1,11 @@
 #!/bin/bash
 
-VERSION=$1
-SRC_DIRECTORY=$HOME/code/ethon
-SRC_FILE="ethon"
+SRC_DIRECTORY=$1
+OUT_FILE=$2
+VERSION=$3
 
-if [ -z $VERSION ]; then
-  printf "Usage: rjs-build VERSION\n\nExample:\n rjs-build <branch_or_tag>\n"
+if [ $# -ne 3 ]; then
+  printf "Usage: rjs-build VERSION\n\nExample:\n rjs-build <directory> <out_file> <branch_or_tag>\n"
   exit 1
 fi
 
@@ -22,7 +22,7 @@ git checkout $VERSION
 r.js -o app.build.js
 
 # Rename the output file for including version
-mv release/$SRC_FILE.js $WD/$SRC_FILE.$VERSION.js
+mv release/$OUT_FILE.js $WD/$OUT_FILE.$VERSION.js
 
 # Restore git state
 git checkout master 
