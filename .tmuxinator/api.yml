@@ -1,0 +1,6 @@
+project_name: api
+project_root: ~/code/adverway/api
+tabs:
+  - editor: vim
+  - git: git fetch && git gl
+  - server: rails s -p 3002

@@ -5,4 +5,5 @@ project_name: ethon
 project_root: ~/code/ethon
 tabs:
   - editor: vim
+  - grunt: grunt karma:unit watch
   - git: git gl

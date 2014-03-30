@@ -1,0 +1,6 @@
+project_name: equidna
+project_root: ~/code/adverway/equidna
+tabs:
+  - editor: vim
+  - grunt: grunt dev
+  - git: git gl

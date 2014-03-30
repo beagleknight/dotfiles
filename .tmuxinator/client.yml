@@ -1,0 +1,6 @@
+project_name: client
+project_root: ~/code/adverway/client
+tabs:
+  - editor: vim
+  - grunt: grunt dev
+  - git: git fetch && git gl

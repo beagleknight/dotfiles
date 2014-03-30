@@ -1,0 +1,6 @@
+project_name: web
+project_root: ~/code/adverway/web
+tabs:
+  - editor: vim
+  - git: git fetch && git gl
+  - server: rails s -p 3003

@@ -5,7 +5,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="arrow"
+ZSH_THEME="junkfood"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -38,8 +38,6 @@ unsetopt correct_all
 export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/opt/vagrant/bin
 export EDITOR=vim
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
 # Launch tmux by default
 if [[ "$TERM" != "screen-256color" ]]
 then
@@ -52,3 +50,18 @@ export DISABLE_AUTO_TITLE="true"
 
 # Disable stopping flow with <C-s>
 stty -ixon
+
+# Enable rvm
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# Enable nvm
+source ~/.nvm/nvm.sh
+
+# Enable tmuxinator
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+
+# Export phantomjs binary
+export PATH=/home/david/software/phantomjs-1.9.1-linux-i686/bin:$PATH
+
+alias superchrome="optirun google-chrome --ignore-gpu-blacklist %U"

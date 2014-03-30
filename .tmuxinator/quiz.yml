@@ -1,0 +1,6 @@
+project_name: quiz
+project_root: ~/code/adverway/games/quiz
+tabs:
+  - editor: vim
+  - grunt: grunt dev
+  - git: git sb && git gl

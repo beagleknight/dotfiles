@@ -1,0 +1,6 @@
+project_name: fbgateway
+project_root: ~/code/adverway/fbgateway
+tabs:
+  - editor: vim
+  - grunt: grunt dev
+  - git: git fetch && git gl

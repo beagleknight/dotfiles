@@ -1,0 +1,7 @@
+project_name: editor
+project_root: ~/code/adverway/editor
+tabs:
+  - editor: vim
+  - grunt: nvm use && grunt dev
+  - git: nvm use && git fetch && git gl
+  - node: nvm use && NODE_ENV=development node src/server/app.js

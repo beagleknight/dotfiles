@@ -1,9 +1,0 @@
-# ~/.tmuxinator/adversus-client.yml
-# you can make as many tabs as you wish...
-
-project_name: adversus-client
-project_root: ~/code/adversus-client
-tabs:
-  - editor: vim
-  - git: git gl
-  - server: node server.js

@@ -1,0 +1,6 @@
+project_name: asteroids
+project_root: ~/code/adverway/games/asteroids
+tabs:
+  - editor: vim
+  - grunt: grunt dev
+  - git: git sb && git gl

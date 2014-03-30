@@ -7,6 +7,7 @@
 	diff = auto
 [core]
 	editor = vim
+	excludesfile = ~/.config/git/ignore
 [alias]
   gl = log --graph --date-order -C -M --pretty=format:\"%x09%C(bold blue)%ar%Creset%x09%C(bold green)%h%Creset%x09%C(bold yellow)%an%Creset %s%Cgreen%d%Creset\" --all --date=short
 	sb = status -sb --ignore-submodules

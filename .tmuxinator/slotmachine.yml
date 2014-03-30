@@ -1,0 +1,6 @@
+project_name: slotmachine
+project_root: ~/code/adverway/games/slotmachine
+tabs:
+  - editor: vim
+  - grunt: grunt dev
+  - git: git sb && git gl
